@@ -1,4 +1,4 @@
-auth_server: $AUTH_SERVER
+auth_server: https://$DOMAIN_NAME
 api_key: $API_KEY
 entrypoint_server: lobby
 logged_entrypoint_server: paper

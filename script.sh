@@ -26,7 +26,7 @@ export LUCKPERMS_DB_USERNAME="luckperms"
 export LUCKPERMS_DB_PASSWORD=$(tr -dc A-Za-z0-9 </dev/urandom | head -c 16; echo)
 
 apt update
-apt install git git-lfs gettext nginx openjdk-17-jre mariadb-server unzip zip curl php-fpm php-zip php-curl php-mysql -y
+apt install git gettext nginx openjdk-17-jre mariadb-server unzip zip curl php-fpm php-zip php-curl php-mysql -y
 $SCRIPT_DIR/install_composer.sh
 
 cd $SCRIPT_DIR
