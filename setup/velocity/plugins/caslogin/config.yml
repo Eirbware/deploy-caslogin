@@ -1,0 +1,7 @@
+auth_server: http://192.168.0.30:8000
+api_key: 9fbe4847-7a10-483a-890c-3f4e29223a4b
+entrypoint_server: lobby
+logged_entrypoint_server: paper
+loginHandlerType: API
+loginPollTimeoutSeconds: 300
+loginPollIntervalMS: 1000

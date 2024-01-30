@@ -1,0 +1,34 @@
+user:
+  login:
+    url_message: "<gray>Veuillez vous connecter en cliquant sur ce lien <blue><click:open_url:'%s'>%s</click></blue><br>Vous serez automatiquement authentifié</gray>"
+    success: "<green>Vous avez bien été authentifié!</green><br><gray>Envoi sur le serveur...</gray>"
+  logout:
+    success: "<green>Vous venez bien de vous déconnecter</green>"
+    force: "<red>Vous avez été déconnecté par un admin.</red>"
+  errors:
+    not_logged_in: "<red>Vous n'êtes pas connecté!</red>"
+    already_logged_in: "<red>Vous êtes déjà connecté!</red>"
+    login_taken: "<red>Cet utilisateur est déjà connecté!</red>"
+    login_timeout: "<red>Timed out. Veuillez réessayer<red>"
+    ask_login: "<red>Veuillez vous connecter avec la commande</red> <gold>/cas login</gold>"
+    invalid_token: "<red>Impossible de vous authentifier. Veuillez réessayer</red>"
+    user_disconnected_no_reason: "<red>Vous avez été déconnecté du serveur</red>"
+    user_disconnected: "<red>Vous avez été déconnecté du serveur pour la raison suivante : </red>"
+    could_not_generate_csrf: "<red>Impossible de générer un token CSRF. Veuillez réessayer plus tard...</red>"
+  banned: "<red>Vous avez été banni.</red>"
+
+
+admin:
+  logout: "<green>Vous avez bien déconnecté le joueur </green><gold><user></gold>"
+  ban: "<green>Vous avez bien banni le joueur </green><gold><user></gold> <green>!</green>"
+  unban: "<green>Vous avez bien débanni le joueur </green><gold><user></gold> <green>!</green>"
+  config:
+    reload: "<green>Vous avez bien rechargé la configuration.</green>"
+
+  errors:
+    not_logged_in: "<red>Cet utilisateur n'est pas connecté!</red>"
+    already_banned: "<red>L'utilisateur </red><gold><user></gold><red> est déjà banni.</red>"
+    not_banned: "<red>L'utilisateur </red><gold><user></gold><red> n'est pas banni.</red>"
+not_enough_permissions: "<red>Permissions insuffisantes.</red>"
+player_exclusive: "<red>Cette commande ne peut être exécutée que par un joueur.</red>"
+

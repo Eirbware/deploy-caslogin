@@ -1,0 +1,7 @@
+auth_server: $AUTH_SERVER
+api_key: $API_KEY
+entrypoint_server: lobby
+logged_entrypoint_server: paper
+loginHandlerType: API
+loginPollTimeoutSeconds: 300
+loginPollIntervalMS: 1000
