@@ -21,23 +21,20 @@ export SCRIPT_DIR="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
 cd $SCRIPT_DIR
 
-export LUCKPERMS_DB="luckperms"
-export LUCKPERMS_DB_USERNAME="luckperms"
-export LUCKPERMS_DB_PASSWORD=$(tr -dc A-Za-z0-9 </dev/urandom | head -c 16; echo)
-
 apt update
 apt install git gettext nginx openjdk-17-jre mariadb-server unzip zip curl php-fpm php-zip php-curl php-mysql -y
 $SCRIPT_DIR/install_composer.sh
 
 cd $SCRIPT_DIR
 
-echo "Installing web server..."
-$SCRIPT_DIR/web_server_install.sh
+echo "Creating web server's database..."
+$SCRIPT_DIR/web_db_install.sh
 
 cd $SCRIPT_DIR
 
-echo "Creating web server's database..."
-$SCRIPT_DIR/web_db_install.sh
+echo "Installing web server..."
+$SCRIPT_DIR/web_server_install.sh
+
 
 cd $SCRIPT_DIR
 

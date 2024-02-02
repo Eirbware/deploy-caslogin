@@ -2,6 +2,7 @@
 
 mkdir -p /etc/letsencrypt/live/$DOMAIN_NAME
 systemctl stop nginx
+
 ~/.acme.sh/acme.sh --set-default-ca --server letsencrypt --issue --standalone -d $DOMAIN_NAME --dns dns_cf \
 --key-file /etc/letsencrypt/live/$DOMAIN_NAME/privkey.pem \
 --fullchain-file /etc/letsencrypt/live/$DOMAIN_NAME/fullchain.pem --force \
